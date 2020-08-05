@@ -26,10 +26,6 @@ jobs:
       uses: fnkr/github-action-git-bash@v1.1
     - name: Clone JFortniteParse Repository
       run: git clone https://github.com/FabianFG/JFortniteParse
-    - name: Debug!!!
-      run: dir
-    - name: Refresh deps for gradle
-      run: ./gradlew build --refresh-dependencies
     - name: Build with Gradle
       run: ./gradlew build --debug
     - name: Python Dependency Installation
