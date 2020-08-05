@@ -27,7 +27,7 @@ jobs:
     - name: Clone JFortniteParse Repository
       run: git clone https://github.com/FabianFG/JFortniteParse
     - name: Build with Gradle
-      run: ./gradlew build --debug
+      run: ./gradlew build
     - name: Python Dependency Installation
       uses: py-actions/py-dependency-install@v2.0.2
       with:
