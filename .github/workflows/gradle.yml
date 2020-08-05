@@ -23,4 +23,15 @@ jobs:
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
     - name: Build with Gradle
-      run: ./gradlew build
+      run: ./gradlew build --debug
+    - name: Python Dependency Installation
+      uses: py-actions/py-dependency-install@v2.0.2
+      with:
+        # Path to requirements.txt file
+        path: requirements.txt # optional, default is requirements.txt
+        # Boolean for pip upgrade prior to the dependency installation (default='true')
+        update-pip: true # optional, default is true
+        # Boolean for setuptools install/upgrade prior to the dependency installation (default='true')
+        update-setuptools: true # optional, default is true
+        # Boolean for wheel install/upgrade prior to the dependency installation (default='true')
+        update-wheel: true # optional, default is true
