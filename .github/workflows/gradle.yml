@@ -28,11 +28,11 @@ jobs:
       run: git clone https://github.com/FabianFG/JFortniteParse
     - name: Build with Gradle
       run: ./gradlew build
-    - name: Python Linting
-      uses: julianwachholz/flake8-action@v1.0.0
-      with:
+   # - name: Python Linting
+  #    uses: julianwachholz/flake8-action@v1.0.0
+   #   with:
         # The name of the check to add annotations to. Generally the same as the job that uses this action
-        checkName: build
+    #    checkName: build
         # Used for internal tests.
     - name: Create Release Zip
       uses: actions/upload-artifact@v2.1.3
