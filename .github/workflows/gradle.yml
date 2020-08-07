@@ -29,7 +29,7 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew build
     - name: Umodel Download
-      run: curl https://www.gildor.org/down/46/umodel/umodel_win32.zip --output ./umodel/umodel.zip
+      run: curl --create-dirs https://www.gildor.org/down/46/umodel/umodel_win32.zip --output ./umodel/umodel.zip
     - name: Umodel Unzip
       run: unzip -q ./umodel/umodel.zip
    # - name: Python Linting
