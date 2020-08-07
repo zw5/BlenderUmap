@@ -29,9 +29,9 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew build
     - name: Umodel Download
-      run: curl --create-dirs https://www.gildor.org/down/46/umodel/umodel_win32.zip --output ./umodel/umodel.zip
+      run: curl --create-dirs https://www.gildor.org/down/46/umodel/umodel_win32.zip --output ./umodel/umodel_win32.zip
     - name: Umodel Unzip
-      run: unzip ./umodel/umodel
+      run: unzip ./umodel/umodel_win32.zip
    # - name: Python Linting
   #    uses: julianwachholz/flake8-action@v1.0.0
    #   with:
